@@ -1,86 +1,22 @@
-<!doctype html>
-<html lang="pt-br">
-    <head>
-        <meta charset ="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> cadastro (EAP)</title>
-    </head>
-    <body>
-        <section> 
-            <h1> (EAP)  a Escola Acessível de programação </h1>
-            <h2> acessibilidade nossa paixão  desde o início. </h2><br> 
-            <p> nosso foco é você.<br>  a acessibilidade não é uma obrigação,  é a nossa paixão!  </p><br>
-            <p> se identificou com nossos ideais? <br> então  cadastre-se já !</p>
-        </section>
-        <main>
-            <form id="formulario" onsubmit="cadastrar()"   >   
-                <fieldset>
-                    <legend>
-                        <h3> dados pessoais </h3>
-                    </legend>
-                    <label for="nome"> nome: <sup> * </sup> </label> <br>
-                    <input id="nome" type="text"  placeholder=" digite o seu nome" required><br>
-                    <label for="sobrenome"> sobrenome: <sup> * </sup> </label><br>
-                    <input id="sobrenome" type="text" placeholder="digite o seu sobrenome" required><br>
-                    <label for="cpf"> CPF: <sup> * </sup> </label> <br>  
-                    <input id="cpf" type="text" placeholder="digite o seu CPF" maxlength="14" required onblur="verificarCpf(this.value)" onkeypress="mascaraCpf()" > <br>
-                    <label for="rg"> RG: <sup> * </sup> </label><br>
-                    <input id ="rg" type="text"  placeholder="digite o seu RG" required><br>
-                    <h4> gênero </h4><br>
-                    <label for="feminino"> feminino </label>
-                    <input id="feminino" name="gender" type="radio" value ="feminino"> <br>
-                    <label for="masculino"> masculino </label>
-                    <input id="masculino" name="gender" type="radio" value ="masculino"><br>
-                    <label for="outro"> outro </label>
-                    <input id="outro" name="gender" type="radio" value ="outro"><br>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EAP - Início</title>
+  <link rel="stylesheet" href="style/estyle.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Início</a> <br>
+    <a href="sobre/index.html">Sobre</a> <br>
+    <a href="cursos/index.html">Nossos Cursos</a> <br>
+    <a href="cadastro/index.html">Cadastre-se</a> <br>
+  </nav>
 
-                </fieldset>
-<br>
-                <fieldset>
-                    <legend>
-                        <h3> dados de contato </h3>
-                    </legend>
-                    <label for="email"> e-mail: <sup> * </sup> </label> <br> 
-                    <input id="email" type="email"  placeholder="digite o seu e-mail" required> <br>
-                    <label for="celular"> celular: <sup> * </sup> </label> <br>
-                    <input id="celular" type="tel" placeholder="digite o número do seu celular" required   maxlength="15" onkeypress="mascaraCelular()"><br>
-                <label for="telefone"> telefone:  </label> <br>     
-                    <input id="telefone" type="tel" placeholder=" digite o seu número de telefone fixo"  onkeypress="mascaraTelefone()"> 
-                </fieldset>
-<br>
-                <fieldset>
-                    <legend>
-                        <h3> dados de endereço </h3>
-                    </legend>
-                    <label for="cep"> CEP: <sup> * </sup> </label> <br>
-                    <input id="cep" type="text" placeholder="digite o seu CEP"  maxlength="9" required onblur="pesquisaCep(this.value)" onkeypress="mascaraCep()"> <br>
-                    <label for="endereco"> endereço: <sup> * </sup> </label>  <br>
-                    <input id="endereco" type="text" placeholder=" nome da rua onde mora" required> <br>
-                    <label for="numero"> número: <sup> * </sup> </label> <br>
-                    <input id="numero" type="number" placeholder="número de sua casa/ prédio" required> <br> 
-                    <label for="complemento"> complemento: </label><br>
-                    <input id="complemento" type="text" placeholder="exemplo: BL xx APTO xx"> 
-                    <label for="bairro"> bairro: <sup> * </sup> </label> <br>
-                    <input id="bairro" type="text" placeholder="bairro onde mora" required> <br>
-                    <label for="cidade"> cidade: <sup> * </sup ></label> <br>
-                    <input id="cidade" type="text" placeholder="cidade onde mora" required readonly> <br>
-                    <label for="estado"> estado: <sup> * </sup> </label> <br>
-                    <input id="estado" type="text" placeholder="o estado onde mora" required readonly>
-                </fieldset>
-
-                <label for="privacidade"> políticas de privacidade </label>  <br> 
-                <input id="privacidade" type="checkbox"  autocomplete="off" required> <br> confirmo que li,  e aceito as   <a href="privacidade.html"> políticas de privacidade.</a> <br>
-                <input id="envia" type="submit"  value="cadastrar" > <br>
-                <input id="limpar" type="reset" value="limpar"> 
-
-            </form>
-        </main>
-<br>
-<footer> 
-&#169; - Guilherme Gabriel Pereira Manoel
-</footer>
-    </body>
-<script src="js/mascara.js"> </script>
-<script src="js/validar.js"> </script>
+  <main>
+    <h1>Seja bem-vindo à EAP</h1>
+    <p>Nosso lema é ensino para todos, com acessibilidade.</p>
+  </main>
+</body>
 </html>
