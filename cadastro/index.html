@@ -37,7 +37,10 @@
                 <label for="cpf">CPF: <sup>*</sup></label><br>
                 <input id="cpf" type="text" placeholder="Digite o seu CPF" maxlength="14" required
                     onblur="verificarCpf(this.value)" onkeypress="mascaraCpf()"><br>
-
+                <label for="cin"> Nova identidade? </label> <br>
+                <input id="cin" type="checkbox" autocomplete="off" onchange="validarCin()">
+                <br>
+                <p>Marque esta   opção se você já possui a nova Carteira de Identidade Nacional (CIN).</p>
                 <label for="rg">RG: <sup>*</sup></label><br>
                 <input id="rg" type="text" placeholder="Digite o seu RG" required><br>
 
@@ -116,8 +119,8 @@
         &#169; - Guilherme Gabriel Pereira Manoel
     </footer>
 
-    <script src="js/mascara.js"></script>
-    <script src="js/validar.js"></script>
+    <script src="../js/mascara.js"></script>
+    <script src="../js/validar.js"></script>
 </body>
 
 </html>

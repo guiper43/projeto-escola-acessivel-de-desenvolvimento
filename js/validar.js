@@ -129,3 +129,19 @@ function pesquisaCep(valor) {
         limpa_formulário_cep();
     }
 };
+
+function validarCin() {
+  setTimeout(() => {
+    const checkbox = document.getElementById("cin");
+    const cpf = document.getElementById("cpf").value.trim();
+    const rg = document.getElementById("rg");
+
+    if (checkbox.checked) {
+      rg.value = cpf;
+      rg.readOnly = true;
+    } else {
+      rg.value = "";
+      rg.readOnly = false;
+    }
+  }, 0);
+}
